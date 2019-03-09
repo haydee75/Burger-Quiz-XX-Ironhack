@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Les menus</title>
-	<link rel="stylesheet" href="styles/nuggets.css">
+	<title>Menu C++</title>
+	<link rel="stylesheet" href="../styles/nuggets.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-	<p id="cook"></p>
+    <p id="cook"></p>
 	<main>
 	
 	<h1>
-		<img class="logo_titre" src="m.jpg" alt="">
+		<img class="logo_titre" src="../images/m.jpg" alt="">
 	</h1>
 
 	<h2>
@@ -20,16 +20,31 @@
 	
   	<div id="box">
 
-        
-            <h2 class="menus"><span>Menu</span><a href="webdev.html">Web Development Bootcamp</a></h2>
-            <h2 class="menus"><span>Menu</span><a href="uxui.html">UX/UI Design Bootcamp</a></h2>
-            <h2 class="menus"><span>Menu</span><a href="c.html">C++ en chinois mandarin <br>Bootcamp, une formation qui n'existe pas encore mais qui est prévu pour 2039 quand Alibaba-group aura racheté Ironhack en bourse.</a></h2>
+        <div id="quiz">
+            <h2 id="titre_quiz">菜单 C++</h>
+                <hr>
+                <br>
+            <p id="question"></p>
+
+            <div class="buttons">
+                <button id="btn0">
+                	<span id="choice0"></span>
+                </button>
+                <button id="btn1">
+                	<span id="choice1"></span>
+                </button>
+                <button id="btn2">
+                	<span id="choice2"></span>
+                </button>
+            </div>
 
             <!-- <hr>
 
             <div class="footer">
                 <p id="progress">QUESTION X SUR Y</p>
             </div> -->
+
+        </div>
 
     </div>
 
@@ -38,9 +53,8 @@
 		<img class="logo_ih" src="https://secure.meetupstatic.com/photos/event/3/6/0/f/600_431893839.jpeg" alt="">
 	</footer>
 	</main>
-	<script src="scripts/controller.js"></script>
-	<script src="scripts/questions.js"></script>
-	<script src="scripts/sel_ou_poivre_app.js"></script>
-  
+	<script src="../scripts/controller.js"></script>
+	<script src="../scripts/questions.js"></script>
+	<script src="../scripts/c_app.js"></script>
 </body>
 </html>

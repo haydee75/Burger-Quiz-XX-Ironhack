@@ -3,7 +3,7 @@ var vid = document.getElementById("myVideo");
 	var intervalId = null;
 
 	function Redirect() {
-    window.location = "intro.html";
+    window.location = "manches/intros/intro.html";
   }
 
 	function finish() {

@@ -67,7 +67,7 @@ var questions = [
 		"Les deux"),
 	
 	new Question(
-		"Mon nom veut dire « vent » en inuit<br><img width=300px src='https://www.lineamarco.com/images/celine-dion-8-duos-dont-tout-fan-se-souvient.jpg'>",
+		"Mon nom veut dire « vent » en inuit<br><img width=300px src='https://media.giphy.com/media/d1E1pZ1cdgWmY0hy/giphy.gif'>",
 		[
 			"Ironhack",
 			"Anorak",

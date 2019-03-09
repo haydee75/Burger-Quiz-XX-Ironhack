@@ -31,7 +31,7 @@ var max_question = valeurs.length;
 function petitBurger() {
   var txt;
   
-    txt = "<a href='clappy_burger/starter_code/index.html' target=blank>Petit <strike>burger</strike> jeu de la mort</a>";
+    txt = "<a href='../clappyburger/index.html' target=blank>Petit <strike>burger</strike> jeu de la mort</a>";
   
   document.getElementById("recompense1").innerHTML = txt;
 } 
@@ -108,7 +108,7 @@ function next(){
 
   		setTimeout(function(){
   			showQuestions(++numQuestion);
-  		}, 100);
+  		}, 10000);
 	}
 
 	showQuestions(0);

@@ -37,5 +37,15 @@ Un questionnaire avec 10 questions à réponse libre.
 #### <i class="icon-pencil"></i> Le Burger de la Mort
 
 10 questions sont posés au joueur qui doit attendre la fin du questionnaire pour y répondre dans l’ordre.
-Si le joueur réussit à donner 5 bonne réponses dans l’ordre, il gagne le petit Burger de la Mort.
-Si le Joueur réussit à donner 10 bonnes réponses, il gagne le Grand Burger de la Mort.
+
+Si le joueur réussit à donner 5 bonne réponses dans l’ordre, il a accès au petit Burger de la Mort :
+
+    **Le clappy Burger**
+    
+    (une version améliorée du jeu flappy bird qui est interactif avec le son)
+
+Si le Joueur réussit à donner 10 bonnes réponses, il a accès au Grand Burger de la Mort :
+
+    à définir
+
+

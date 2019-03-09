@@ -8,7 +8,6 @@
 Totaliser 25 Miams (points) en répondant aux questions afin de tenter l’ultime épreuve : Le Burger de la Mort.
 
 > **Note:**
-
 > - Cette édition du Burger Quiz se joue à un joueur.
 
 **Les manches**

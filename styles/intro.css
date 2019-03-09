@@ -1,0 +1,101 @@
+html,*{
+	margin: 0;
+	padding: 0;
+	cursor: url(../images/cursor.png), auto;
+  	-webkit-zoom-in;
+  	-webkit-zoom-out;
+  	-webkit-zoom-grab;
+  	-webkit-zoom-grabbing;
+}
+
+body{
+	background: black;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-transform: uppercase;
+}
+
+main{
+	width: 80%;
+	height: 490px;
+	margin:auto;
+	margin-top: 2em;
+	padding: 4em 0em;
+	/*min-width: 100%;
+  	min-height: 100%;
+	margin: 1em;*/
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*border: 5px solid #f00;*/
+	outline: 10px dashed red;
+	box-shadow: 0 0 0 10px yellow; 
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+p{
+	margin: 10px;
+	font-size: 20px;
+}
+
+a{
+	font-size: 15px;
+	margin: 10px 150px;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+span{
+	text-transform: none;
+}
+
+img{
+	margin:10px 0px;
+}
+
+.option{
+	font-size: 14px;
+}
+
+.link{
+	padding: 5px 50px;
+	background: red;
+	color: yellow;
+	text-decoration: none;
+	text-align: center;
+}
+
+.link:hover{
+	padding: 5px 50px;
+	background: yellow;
+	color: red;
+	text-decoration: none;
+	text-align: center;
+}
+
+.game{
+	padding: 5px 50px;
+	background: yellow;
+	color: red;
+	text-decoration: none;
+}
+
+.game:hover{
+	padding: 5px 50px;
+	background: red;
+	color: yellow;
+	text-decoration: none;
+}
+
+#options{
+	display: flex;
+}

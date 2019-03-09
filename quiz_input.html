@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	
+	#questions{
+		width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .modal{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .modal h2{
+    font-size:15px;
+  }
+
+</style>
+<body>
+	
+	<h1>La question contient "Iron"</h1>
+
+<p>Score : <span id="score"></span></p>
+
+<div id="questions">
+  
+  <div class="modal">
+    <div id="question1">
+      <h2>Un type de courge</h2>
+      <input id="reponse1" type="text" onkeyup="this.value = this.value.toUpperCase();">
+    </div>
+    <div id="question2">
+      <h2>Un sport nautique</h2>
+      <input id="reponse2" type="text" onkeyup="this.value = this.value.toUpperCase();">
+    </div>
+    <div id="question3">
+        <h2>Avec humour et dérision</h2>
+        <input id="reponse3" type="text" onkeyup="this.value = this.value.toUpperCase();">
+      </div>
+  </div>
+    
+   <div class="modal">
+      <div id="question4">
+        <h2>Un oiseau migrateur</h2>
+        <input id="reponse4" type="text" onkeyup="this.value = this.value.toUpperCase();">
+      </div>
+      <div id="question5">
+        <h2>Un département du sud-ouest</h2>
+        <input id="reponse5" type="text" onkeyup="this.value = this.value.toUpperCase();">
+      </div> 
+      <div id="question6">
+        <h2>Un super héros</h2>
+        <input id="reponse6" type="text" onkeyup="this.value = this.value.toUpperCase();">
+      </div>
+  </div>
+<br>
+<button onclick="getValue()">Valider</button>
+</div>
+
+
+	<script>
+		
+class Quizz{
+  
+  constructor(array){
+    this.array  = array;
+    this.score  = 0;
+  }
+  
+  checkIfCorrect(){
+    for (let d in this.array){
+      if(d===this.array[d]){
+        this.score++;
+        //console.log(true)
+      }else{
+        //console.log(false)
+      }
+    }
+    return this.score;
+  } 
+}
+
+var valeurs = {
+  "POTIRON"     : "",
+  "AVIRON"      : "",
+  "IRONIE"      : "",
+  "HIRONDELLE"  : "",
+  "GIRONDE"     : "",
+  "IRONMAN"     : ""
+};
+
+function getValue(){
+  
+  var index = 1;
+
+  for(var i in valeurs){
+
+    valeurs[i] = document.getElementById('reponse'+(index++)).value;
+  
+  }
+  
+  let tableau  = new Quizz(valeurs);
+  
+  console.log(tableau.checkIfCorrect());
+  
+  var txt_story = document.getElementById("score");
+  txt_story.innerHTML = tableau.score;
+  
+}
+
+
+////////////
+
+// var values = [
+//   {
+//     question      : "Un type de courge",
+//     correctAnswer : "POTIRON",
+//     userAnswer    : ""
+//   },
+//   {
+//     question      : "Un sport nautique",
+//     correctAnswer : "AVIRON",
+//     userAnswer    : ""
+//   },
+//   {
+//     question      : "Une forme d'humour",
+//     correctAnswer : "IRONIE",
+//     userAnswer    : ""
+//   },
+//   {
+//     question      : "Un oiseau migrateur",
+//     correctAnswer : "HIRONDELLE",
+//     userAnswer    : ""
+//   },
+//   {
+//     question      : "Un département du sud-ouest",
+//     correctAnswer : "GIRONDE",
+//     userAnswer    : ""
+//   },
+//   {
+//     question      : "Un super héros",
+//     correctAnswer : "IRONMAN",
+//     userAnswer    : ""
+//   }
+// ];
+
+// var allQuestions = values.map(value => {
+//   return value.question;
+// })
+
+// var allAnswer = values.map(value => {
+//   return value.correctAnswer;
+// })
+
+// for(var i in allQuestions){
+ 
+//    var newH2   = document.createElement('h2');
+//    var newInput = document.createElement('input');
+  
+//   newInput.id = 'reponse'+i;
+  
+//   newH2.innerHTML += allQuestions[i];
+  
+//   div.appendChild(newH2);
+//   div.appendChild(newInput);
+  
+// }
+
+	</script>
+</body>
+</html>

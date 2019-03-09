@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Burger de la mort</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="styles/burger_de_la_mort.css">
+</head>
+<body>
+	<!-- <div id="score"></div> -->
+	
+	<h1><img src="bgm.jpg" alt=""></h1>
+	<span style="display: flex">
+	<p class="recompense" id="recompense1"></p>
+	&nbsp;
+	<p class="recompense" id="recompense2"></p>
+	</span>
+	<div id="questions">
+		<h2 id="questionIndex"></h2>
+	</div>
+
+	<div id="div_reponses">
+		
+		<span id="question">Question 1</span>
+		<br>
+		<input id="reponse" type="text" onkeyup="this.value = this.value.toUpperCase();">
+
+		<button id="next" onclick="next()">Suivant</button>
+	</div>
+
+	<script src="scripts/burger_de_la_mort.js"></script>
+</body>
+</html>

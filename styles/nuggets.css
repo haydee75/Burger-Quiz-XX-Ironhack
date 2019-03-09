@@ -1,0 +1,224 @@
+/* STYLE GENERAL */
+
+html,*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+main{
+  width: 80%;
+  height: 490px;
+  margin:auto;
+  margin-top: 2em;
+  padding: 4em 0em;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 10px dashed red;
+  box-shadow: 0 0 0 10px yellow; 
+}
+
+h1{
+  width: 300px;
+  overflow: hidden;
+  margin: 0;
+  position: fixed;
+  top: 65px;
+  left: 130px;
+}
+
+#quiz{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#titre_quiz{
+   margin-left: 10px;
+   text-align: center;
+}
+
+h2>img{
+  border: 1px solid black;
+width: 300px;
+overflow: hidden;
+margin: 0;
+position: fixed;
+top: 370px;
+left: 130px;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid red;
+    margin: 5px;
+    padding: 0;
+  }
+
+/* STYLE QUIZZ */
+
+#box{
+  background: black;
+  margin-left: 280px;
+  margin-top: -30px;
+  padding: 20px;
+  width: 600px;
+  height: 500px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+#question{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+span{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.buttons{
+  margin: 0px 0px 30px 20px;
+}
+
+button{
+  background: red;
+  margin-top: 30px;
+  
+  width: 270px;
+  height: 50px;
+  font-size: 20px;
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 50px;
+}
+
+#btn0, #btn2{
+  margin-right: 1em;
+}
+
+button:hover{
+  cursor: pointer;
+  background: yellow;
+  color: red;
+  border: 2px solid red;
+}
+
+#progress{
+  margin-left: 20px;
+  color: yellow;
+  font-size: 20px;
+}
+
+img{
+  margin-top: 1em;
+}
+
+#score{
+  text-align: center;
+  font-size: 3em;
+  color: red;
+  background: yellow;
+  width: 150px;
+  overflow: hidden;
+  margin: 0;
+  position: fixed;
+  top: 170px;
+  left: 200px;
+}
+
+/* STYLE LOGOS */
+
+.nuggets_logo{
+  display: block;
+  width: 100%;
+  margin: -21.875% 0;
+}
+
+.logo_bg{
+  margin: 5px;
+  width: 100px;
+}
+
+.logo_ih{
+  margin: 5px;
+  width: 70px;
+}
+
+/* STYLE FOOTER */
+
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.menus{
+  margin:3em;
+  padding: 5px;
+}
+
+.menus>span{
+  background: #364590;
+  color: lightblue;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.menus>a{
+  font-size: 20px;
+  margin-left: 1em;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+.logo_titre{
+  margin: -30px 0px 0px -30px;
+}
+
+.modal h2{
+  font-size:15px;
+}
+
+#burger_de_la_mort{
+  display: none;
+}
+
+#question2, #question3, #question4, #question5, #question6, #question7{
+  visibility: hidden;
+}
+
+.additon_form{
+  margin-top: 4em;
+}
+
+.additon_form h2{
+  font-size: 1em !important;
+}
+
+.additon_form input{
+  width: 230px;
+height: 2em;
+}
+
+#titre_quiz{
+  font-size: 2em;
+}
+
+.input_align{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}

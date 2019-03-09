@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuggets</title>
+</head>
+<style>
+
+	video#myVideo {
+  		position: fixed;
+  		right: 0;
+  		bottom: 0;
+  		min-width: 100%;
+  		min-height: 100%;
+  		width: auto;
+  		height: auto;
+  		z-index: -100;
+  		background: black;
+  		background-size: cover;
+	}
+
+</style>
+<body onload="start()">
+
+	<video id="myVideo" width="320" height="176">
+ 		<source src="../videos/addition.mp4" type="video/mp4">
+	</video>
+
+<script>
+	var vid = document.getElementById("myVideo");
+	var counter = 6;
+	var intervalId = null;
+
+	function Redirect() {
+               window.location = "../addition.html";
+    }
+
+	function finish() {
+  		clearInterval(intervalId);
+		Redirect();
+	}
+
+	function bip() {
+    	counter--;
+    	if(counter == 0) finish();
+    	else {
+    	vid.play();
+    	}	
+	}
+
+	function start(){
+  		intervalId = setInterval(bip, 1000);
+	}	
+</script>
+</body>
+</html>

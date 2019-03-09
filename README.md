@@ -38,7 +38,7 @@ Un questionnaire avec 10 questions à réponse libre.
 
 10 questions sont posés au joueur qui doit attendre la fin du questionnaire pour y répondre dans l’ordre.
 
-Si le joueur réussit à donner 5 bonne réponses dans l’ordre, il a accès au petit Burger de la Mort :
+Si le joueur réussit à donner 5 bonnes réponses dans l’ordre, il a accès au petit Burger de la Mort :
 
     **Le clappy Burger**
     

@@ -40,12 +40,12 @@ Un questionnaire avec 10 questions à réponse libre.
 
 Si le joueur réussit à donner 5 bonnes réponses dans l’ordre, il a accès au petit Burger de la Mort :
 
-    **Le clappy Burger**
+    ** Le clappy Burger **
     
     (une version améliorée du jeu flappy bird qui est interactif avec le son)
 
 Si le Joueur réussit à donner 10 bonnes réponses, il a accès au Grand Burger de la Mort :
 
-    à définir
+    ** Un Burger Renagade **
 
 
